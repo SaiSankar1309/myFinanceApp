@@ -1,59 +1,44 @@
-# MyAngularApp
+**Angular + Firebase Test Sample Project**
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+This is a test project demonstrating how to connect an Angular frontend with a Firebase backend.
 
-## Development server
+**Features**
 
-To start a local development server, run:
+- Angular frontend for data entry and display
+- Firebase (Firestore) backend for data storage
+- Real-time data synchronization between frontend and backend
 
-```bash
+**Getting Started**
+
+1. **Clone the repository**  
+git clone <your-repo-url>
+
+2. **Install dependencies**  
+npm install
+
+3. **Set up Firebase**  
+- Create a Firebase project in the [Firebase Console](https://console.firebase.google.com).
+- Create a Firestore database (in test mode for development).
+- Copy your Firebase configuration into `src/environments/environment.ts`:
+  ```
+  export const environment = {
+    firebase: {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_AUTH_DOMAIN",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_STORAGE_BUCKET",
+      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    }
+  };
+  ```
+
+4. **Run the app**  
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Visit [http://localhost:4200](http://localhost:4200) in your browser.
 
-## Code scaffolding
+## Purpose
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is for testing and demonstration purposes only.  
+It shows how to connect Angular with Firebase for basic CRUD operations.
